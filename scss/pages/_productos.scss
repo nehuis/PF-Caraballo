@@ -1,0 +1,58 @@
+section{
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+}
+.card{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 550px;
+    width: 300px;
+    background-color: rgb(83, 82, 82);
+    text-align: center;
+    border: 1px solid black;
+}
+.card_img{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.card_img1{
+    background-image: url(../multimedia/descarga6.jpg);
+}
+.card_img2{
+    background-image: url(../multimedia/camion4.jpg);
+}
+.card_img3{
+    background-image: url(../multimedia/laboratorio.jpg);
+}
+.card_img4{
+    background-image: url(../multimedia/movimiento\ de\ suelo\ 2.jpg);
+}
+.card_title{
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+}
+.card_desc{
+    color: white;
+    font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.card a{
+    color: white;
+    background-color: rgb(2, 57, 128);
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 110px;
+    margin-left: 93px;
+    border-radius: 10px;
+}
+.card a:hover{
+    color: black;
+}

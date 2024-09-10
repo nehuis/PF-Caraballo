@@ -1,0 +1,15 @@
+$color1: rgb(0, 255, 13);
+$color3: rgb(48, 48, 48);
+
+body{
+    margin: 0;
+    background-color: $color3;
+    font-family: 'Heebo', sans-serif;
+
+    h1{
+        margin: 20px 10px 10px 10px;
+        color: black;
+        text-align: center;
+        font-size: 35px;
+    }
+}
