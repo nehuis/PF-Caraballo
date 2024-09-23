@@ -1,46 +1,19 @@
-p{
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    margin-top: 8px;
+.ti1{
+    color: $color1;
+    font-size: 45px;
 }
-.products{
-    font-family: 'Heebo', sans-serif;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: repeat(2, 300px);
-    grid-gap: 15px;
-    padding: 15px;
-
-    .productos{
-        border: 1px solid #000;
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        transition: all 0.3s;
-    }
-
-    .products:hover{
-        transform: scale(1.02);
-    }
-
-    .products1{
-        background-image: url(../multimedia/C1.png);
-    }
-    .products2{
-        background-image: url(../multimedia/C2.png);
-    }
-    .products3{
-        background-image: url(../multimedia/C3.png);
-    }
-    .products4{
-        background-image: url(../multimedia/C4.png);
-    }
-    .products5{
-        background-image: url(../multimedia/C5.png);
-    }
-    .products6{
-        background-image: url(../multimedia/C6.png);
-    }
+.ti2{
+    color: $color1;
+}
+.faq{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    color: white;
+    text-align: center;
+}
+.item1{
+    margin-right: 30px;
+    margin-top: 50px;
+    font-size: 20px;
 }

@@ -1,58 +1,54 @@
 section{
-    display: flex;
-    justify-content: space-evenly;
-    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 2fr);
+    justify-items: center
 }
 .card{
     margin-top: 50px;
     margin-bottom: 50px;
-    height: 550px;
+    height: 300px;
     width: 300px;
-    background-color: rgb(83, 82, 82);
     text-align: center;
     border: 1px solid black;
+    background-color: $color1;
+    font-family: fantasy;
+    font-size: large;
 }
-.card_img{
+.card-img{
     height: 300px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
-.card_img1{
-    background-image: url(../multimedia/descarga6.jpg);
+.boton{
+    background-color: greenyellow;
 }
-.card_img2{
-    background-image: url(../multimedia/camion4.jpg);
+.card-img1{
+    background-image: url("/multimedia/prote.png");
 }
-.card_img3{
-    background-image: url(../multimedia/laboratorio.jpg);
+.card-img2{
+    background-image: url("/multimedia/creatina2.jpg");
 }
-.card_img4{
-    background-image: url(../multimedia/movimiento\ de\ suelo\ 2.jpg);
+.card-img3{
+    background-image: url("/multimedia/Prewar_Fruit.webp");
 }
-.card_title{
-    margin: 0px;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 10px;
-    color: white;
-    background-color: #333;
+.card-img4{
+    background-image: url("/multimedia/aminoacido.jpg");
 }
-.card_desc{
-    color: white;
-    font-size: 16px;
-    padding-left: 4px;
-    padding-right: 4px;
+.card-img5{
+    background-image: url("/multimedia/ripped-ena-x-60-c_psulas.jpg");
 }
-.card a{
-    color: white;
-    background-color: rgb(2, 57, 128);
-    text-decoration: none;
-    padding: 10px 20px;
-    width: 110px;
-    margin-left: 93px;
-    border-radius: 10px;
+.card-img6{
+    background-image: url("/multimedia/gainer.jpeg");
 }
-.card a:hover{
-    color: black;
+.card-img7{
+    background-image: url("/multimedia/multivitaminico.avif");
 }
+.card-img8{
+    background-image: url("/multimedia/minerales2.jpg");
+}
+.card-img9{
+    background-image: url("/multimedia/shaker.jfif");
+}
+

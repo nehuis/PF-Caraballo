@@ -1,0 +1,38 @@
+.vision{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+}
+.t1{
+    color: $color1; 
+}
+.im1{
+    width: 50%;
+    height: auto;
+}
+.text1{
+    max-width: 600px;
+}
+.story{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    gap: 10%;
+    margin: 30px;
+    margin-top: 250px;
+    text-align: center;
+}
+.t2{
+    color: $color1;
+}
+.im2{
+    width: 50%;
+    height: auto;
+}
+.text2{
+    max-width: 600px;
+}

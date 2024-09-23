@@ -1,7 +1,7 @@
 header{
     .navbar{
         font-size: 20px;
-        background-color: rgb(2, 57, 128) !important;
+        background-color: $color1 !important;
         z-index: 2;
 
         .img-navbar{
@@ -9,11 +9,11 @@ header{
         }
 
         .nav-link{
-            color: white !important;
+            color: rgb(0, 0, 0) !important;
         }
 
         .nav-link:hover{
-            color: black !important;
+            color: green !important;
         }
     }
 }

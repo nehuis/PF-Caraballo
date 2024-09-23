@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
-.home .home1 {
-  background-image: url(../multimedia/suplementos-deportivos.webp);
-  background-size: cover;
-  height: 1000px;
-}
-
-.nosotros {
-  height: auto;
-}
-
-.nosotros .nosotros1 {
-  padding: 10px;
+.box1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.829);
+  font-size: 25px;
+}
+
+.b1 {
+  background-color: greenyellow;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .navegacion {
@@ -23,7 +21,8 @@
   font-family: "Heebo", sans-serif !important;
   margin: 10px;
 }
-.contacto p {
+
+p {
   font-size: 19px;
   margin-bottom: 8px;
 }
@@ -37,69 +36,95 @@ footer i {
   margin-left: 38px;
 }
 
-/*pages inicio*/
-p {
-  text-align: center;
-  font-size: 35px;
-}
-
-.productos {
+/*layout inicia*/
+body {
+  margin: 0;
+  background-color: rgb(48, 48, 48);
   font-family: "Heebo", sans-serif;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 3fr);
-  grid-template-rows: repeat(2, 300px);
-  grid-gap: 15px;
-  padding: 15px;
-}
-.productos .products {
-  border: 1px solid #000;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  transition: all 0.3s;
-}
-.productos .products:hover {
-  transform: scale(1.02);
-}
-.products .products1 {
-  background-image: url(../multimedia/C1.png);
-}
-.products .products2 {
-  background-image: url(../multimedia/C2.png);
-}
-.productos .products3 {
-  background-image: url(../multimedia/C3.png);
-}
-.products .products4 {
-  background-image: url(../multimedia/C4.png);
-}
-.products .products5 {
-  background-image: url(../multimedia/C5.png);
-}
-.products .products6 {
-  background-image: url(../multimedia/C6.png);
 }
 
+h1 {
+  margin: 20px 10px 10px 10px;
+  color: rgb(0, 255, 13);
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+footer nav a {
+  font-family: "Heebo", sans-serif;
+  padding-right: 10px;
+  color: black;
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 18px;
+}
+footer nav a:hover {
+  color: green;
+}
+footer .container__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: auto;
+  margin: auto;
+  height: auto;
+  background-color: rgb(0, 255, 13);
+  color: black;
+  font-family: "Heebo", sans-serif;
+}
+footer .container__footer .logo1 img {
+  height: 160px;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+footer .container__footer h2 {
+  font-size: 25px !important;
+}
+footer .container__footer p {
+  text-align: left;
+  color: black;
+}
+
+header .navbar {
+  font-size: 20px;
+  background-color: rgb(0, 255, 13) !important;
+  z-index: 2;
+}
+header .navbar .img-navbar {
+  height: 160px;
+}
+header .navbar .nav-link {
+  color: rgb(0, 0, 0) !important;
+}
+header .navbar .nav-link:hover {
+  color: green !important;
+}
+
+/*layout fin*/
+/*pages inicio*/
 form {
   margin: 50px;
   margin-top: 20px;
-  border: solid 2px black;
+  border: solid 1px black;
   height: 340px;
   width: auto;
   text-align: left;
   padding: 10px;
   font-weight: 600;
+  color: rgb(0, 255, 13);
 }
 
 .mapa {
   margin-bottom: 20px;
   text-align: center;
 }
-.mapa p {
-  margin-right: 10px;
+
+.map {
   text-align: center;
-  color: black;
+  color: rgb(0, 255, 13);
 }
 
 iframe {
@@ -110,455 +135,148 @@ iframe {
   font-size: 20px;
 }
 
-.boton {
+.bt {
   text-align: center;
+  color: greenyellow;
 }
 
-/*pages fin*/
-/*layout inicio*/
-header .navbar {
-  font-size: 20px;
-  background-color: rgb(0, 255, 13) !important;
-  z-index: 2;
-}
-header .navbar .img-navbar {
-  height: 160px;
-}
-header .navbar .nav-link {
-  color: white !important;
-}
-header .navbar .nav-link:hover {
-  color: black !important;
-}
-
-footer {
-  width: 100%;
-  height: 100%;
-}
-footer nav a {
-  font-family: "Heebo", sans-serif;
-  padding-right: 10px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  justify-content: space-between;
-  font-size: 18px;
-}
-footer nav a:hover {
-  color: rgb(0, 0, 0);
-}
-footer .container__footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: auto;
-  margin: auto;
-  height: 170px;
+.btn {
   background-color: rgb(0, 255, 13);
-  color: rgb(255, 255, 255);
-  font-family: "Heebo", sans-serif;
-}
-footer .container__footer .logo1 img {
-  height: 160px;
-  margin-bottom: 10px;
-}
-footer .container__footer h2 {
-  font-size: 25px !important;
-}
-footer .container__footer p {
-  text-align: left;
 }
 
-body {
-  margin: 0;
-  background-color: rgb(48, 48, 48);
-  font-family: "Heebo", sans-serif;
-}
-body h1 {
-  color: black;
+.vision {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  color: white;
+  font-size: 30px;
   text-align: center;
-  font-size: 35px;
+  margin: 30px;
 }
 
-/*layout fin*/
-/*base inicio*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none !important;
+.t1 {
+  color: rgb(0, 255, 13);
 }
 
-/*base fin*/
-/*comienzan las media quaries*/
-@media only screen and (max-width: 2560px) and (min-width: 768px) {
-  .about {
-    content-visibility: hidden;
-    background-image: none;
-    border: none;
-    height: 0px;
-  }
-  .us {
-    content-visibility: hidden;
-  }
+.im1 {
+  width: 50%;
+  height: auto;
 }
-@media only screen and (max-width: 1215px) {
-  section {
-    display: grid;
-    grid-template-rows: repeat(4, 850px);
-    height: 3450px;
-  }
-  .card {
-    width: 1100px;
-    height: 800px;
-  }
-  .card_img {
-    height: 800px;
-  }
-  .card_img1 {
-    background-image: url(../multimedia/descarga8.jpg);
-  }
-  .card a {
-    margin-left: 500px;
-    margin-bottom: 20px;
-  }
-  .card_title {
-    font-size: 30px;
-  }
-  .card_desc {
-    font-size: 20px;
-  }
+
+.text1 {
+  max-width: 600px;
 }
-@media only screen and (max-width: 1120px) {
-  section {
-    grid-template-rows: repeat(4, 750px);
-    height: 3050px;
-  }
-  .card {
-    width: 900px;
-    height: 700px;
-  }
-  .card a {
-    margin-left: 400px;
-  }
+
+.story {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  gap: 10%;
+  margin: 30px;
+  margin-top: 250px;
+  text-align: center;
 }
-@media only screen and (max-width: 1080px) {
-  .carousel-caption p {
-    font-size: 28px;
-  }
-  iframe {
-    width: 700px;
-  }
+
+.t2 {
+  color: rgb(0, 255, 13);
 }
-@media only screen and (max-width: 920px) {
-  section {
-    grid-template-rows: repeat(4, 750px);
-  }
-  .card {
-    width: 700px;
-    height: 650px;
-  }
-  .card a {
-    margin-left: 295px;
-  }
+
+.im2 {
+  width: 50%;
+  height: auto;
 }
-@media only screen and (max-width: 905px) and (min-width: 689px) {
-  .carousel-caption p {
-    font-size: 25px;
-  }
-  .home {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, 500px);
-  }
-  .home h1 {
-    font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.774);
-    color: white;
-  }
-  .home .img1 {
-    background-position: center;
-  }
-  .home .img3 {
-    background-position: bottom;
-  }
-  footer {
-    height: 100%;
-    width: 100%;
-  }
-  footer .contacto {
-    content-visibility: hidden;
-  }
-  footer .navegacion {
-    margin-left: 80px;
-  }
-  footer .redes_sociales {
-    margin-right: 10px;
-  }
+
+.text2 {
+  max-width: 600px;
 }
-@media only screen and (max-width: 900px) {
-  .clients {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 400px);
-  }
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(2, 2fr);
+  justify-items: center;
 }
-@media only screen and (max-width: 860px) and (min-width: 320px) {
-  .vw_truck {
-    background-position: center;
-  }
+
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(0, 255, 13);
+  font-family: fantasy;
+  font-size: large;
 }
-@media only screen and (max-width: 800px) {
-  iframe {
-    width: 550px;
-  }
+
+.card-img {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
-@media only screen and (max-width: 767px) {
-  .about {
-    height: 500px;
-  }
-  .us p {
-    font-size: 20px;
-  }
+
+.boton {
+  background-color: greenyellow;
 }
-@media only screen and (max-width: 730px) {
-  .clients {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 450px);
-  }
+
+.card-img1 {
+  background-image: url("/multimedia/prote.png");
 }
-@media only screen and (max-width: 720px) {
-  section {
-    grid-template-rows: repeat(4, 700px);
-    height: 2850px;
-  }
-  .card {
-    width: 500px;
-  }
-  .card a {
-    margin-left: 195px;
-  }
+
+.card-img2 {
+  background-image: url("/multimedia/creatina2.jpg");
 }
-@media only screen and (max-width: 688px) {
-  h1 {
-    background-color: rgba(0, 0, 0, 0.774);
-    color: white;
-  }
-  .contacto {
-    content-visibility: hidden;
-  }
-  .navegacion {
-    margin-left: 80px;
-  }
-  .home {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, 500px);
-  }
-  .home .img3 {
-    background-position: center;
-  }
-  .home h1 {
-    font-size: 27px;
-    background-color: rgba(0, 0, 0, 0.774);
-    color: white;
-  }
+
+.card-img3 {
+  background-image: url("/multimedia/Prewar_Fruit.webp");
 }
-@media only screen and (max-width: 666px) {
-  iframe {
-    width: 450px;
-  }
+
+.card-img4 {
+  background-image: url("/multimedia/aminoacido.jpg");
 }
-@media only screen and (max-width: 605px) and (min-width: 320px) {
-  .home {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 200px);
-  }
-  .home .img1 {
-    background-position: center;
-  }
-  .home .img3 {
-    background-image: url(../multimedia/obra.jpg);
-  }
-  .navegacion {
-    content-visibility: hidden;
-  }
-  .redes_sociales {
-    margin-top: 40px;
-  }
+
+.card-img5 {
+  background-image: url("/multimedia/ripped-ena-x-60-c_psulas.jpg");
 }
-@media only screen and (max-width: 575px) and (min-width: 320px) {
-  .navbar-collapse {
-    background-color: rgb(2, 57, 128);
-    z-index: 2;
-  }
+
+.card-img6 {
+  background-image: url("/multimedia/gainer.jpeg");
 }
-@media only screen and (max-width: 566px) {
-  h4 {
-    font-size: 21px !important;
-  }
+
+.card-img7 {
+  background-image: url("/multimedia/multivitaminico.avif");
 }
-@media only screen and (max-width: 560px) {
-  .mapa {
-    content-visibility: hidden;
-  }
-  h6 {
-    content-visibility: hidden;
-  }
-  form {
-    margin: 10px;
-    margin-top: 50px;
-  }
+
+.card-img8 {
+  background-image: url("/multimedia/minerales2.jpg");
 }
-@media only screen and (max-width: 548px) and (min-width: 496px) {
-  .navegacion {
-    content-visibility: hidden;
-  }
-  .redes_sociales {
-    margin-top: 45px;
-    margin-right: 30px;
-  }
+
+.card-img9 {
+  background-image: url("/multimedia/shaker.jfif");
 }
-@media only screen and (max-width: 520px) {
-  section {
-    grid-template-rows: repeat(4, 550px);
-    height: 2300px;
-  }
-  .card {
-    width: 400px;
-    height: 500px;
-  }
-  .card_title {
-    font-size: 19px;
-  }
-  .card_desc {
-    font-size: 18px;
-  }
-  .card a {
-    margin-left: 150px;
-  }
+
+.ti1 {
+  color: rgb(0, 255, 13);
+  font-size: 45px;
 }
-@media only screen and (max-width: 496px) {
-  .redes_sociales {
-    margin-top: 45px;
-    margin-right: 20px;
-  }
+
+.ti2 {
+  color: rgb(0, 255, 13);
 }
-@media only screen and (max-width: 480px) {
-  .about {
-    background-position: left;
-    height: 570px;
-  }
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  color: white;
+  text-align: center;
 }
-@media only screen and (max-width: 464px) {
-  .redes_sociales {
-    margin: auto;
-  }
+
+.item1 {
+  margin-right: 30px;
+  margin-top: 50px;
+  font-size: 20px;
 }
-@media only screen and (max-width: 460px) {
-  .clients {
-    grid-template-rows: repeat(6, 300px);
-  }
-}
-@media only screen and (max-width: 451px) {
-  .logo1 {
-    content-visibility: hidden;
-  }
-  .redes_sociales {
-    margin: 45px 130px 40px 5px;
-  }
-}
-@media only screen and (max-width: 426px) {
-  section {
-    grid-template-rows: repeat(4, 550px);
-    height: 2250px;
-  }
-  .card {
-    width: 300px;
-  }
-  .card a {
-    margin-left: 95px;
-  }
-  .about {
-    background-position: center;
-  }
-}
-@media only screen and (max-width: 409px) {
-  .vw_truck {
-    height: 750px;
-  }
-  .redes_sociales {
-    margin: 45px 120px 40px 5px;
-  }
-}
-@media only screen and (max-width: 406px) {
-  .redes_sociales {
-    margin: 45px 110px 40px 5px;
-  }
-}
-@media only screen and (max-width: 396px) {
-  .redes_sociales {
-    margin-right: 100px;
-    margin-top: 40px;
-  }
-}
-@media only screen and (max-width: 388px) {
-  .vw_truck {
-    height: 800px;
-  }
-}
-@media only screen and (max-width: 386px) {
-  .redes_sociales {
-    margin-right: 95px;
-    margin-top: 40px;
-  }
-}
-@media only screen and (max-width: 376px) {
-  .redes_sociales {
-    margin-left: 120px;
-    margin-right: 50px;
-    margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 371px) {
-  .vw_truck {
-    height: 850px;
-    background-position: center;
-  }
-  p {
-    font-size: 27px;
-  }
-}
-@media only screen and (max-width: 355px) and (min-width: 320px) {
-  .redes_sociales {
-    margin-left: 95px;
-  }
-}
-@media only screen and (max-width: 340px) {
-  section {
-    grid-template-rows: repeat(4, 550px);
-  }
-  .card {
-    width: 250px;
-  }
-  .card a {
-    margin-left: 70px;
-  }
-}
-@media only screen and (max-width: 329px) {
-  .vw_truck {
-    height: 920px;
-  }
-}
-@media only screen and (max-width: 321px) {
-  .vw_truck {
-    height: 940px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  form {
-    height: 400px;
-    padding: 10px;
-    padding-top: 30px;
-  }
-  .boton {
-    margin-top: 50px;
-  }
-}
-/*terminan las media quaries*//*# sourceMappingURL=style.css.map */
+
+/*pages fin*//*# sourceMappingURL=style.css.map */

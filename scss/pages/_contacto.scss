@@ -1,22 +1,21 @@
 form{
     margin: 50px;
     margin-top: 20px;
-    border: solid 2px black;
+    border: solid 1px black;
     height: 340px;
     width: auto;
     text-align: left;
     padding: 10px;
     font-weight: 600;
+    color: $color1;
 }
 .mapa{
     margin-bottom: 20px;
     text-align: center;
-
-    p{
-        margin-right: 10px;
-        text-align: center;
-        color: black;
-    }
+}
+.map{
+    text-align: center;
+    color: $color1;
 }
 iframe{
     width: 1000px;
@@ -24,6 +23,10 @@ iframe{
 .mb-3{
     font-size: 20px;
 }
-.boton{
+.bt{
     text-align: center;
+    color: greenyellow;
+}
+.btn{
+    background-color: $color1;
 }
