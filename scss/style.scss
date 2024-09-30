@@ -7,6 +7,10 @@ $color1: rgb(0, 255, 13);
     color: white;
     font-size: 25px;
 }
+.desc{
+    text-align: center;
+    color: white;
+}
 .b1{
     background-color: greenyellow;
     border-radius: 10px;
@@ -26,10 +30,11 @@ p{
 .redes_sociales{
     margin: 10px;
 }
-footer i{
-    font-size: 20px;
-    margin-left: 38px;
-}
+
+/*reset inicia*/
+@import "./reset/reset";
+/*reset fin*/
+
 
 /*layout inicia*/
 @import "./layout/body";

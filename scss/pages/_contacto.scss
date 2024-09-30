@@ -1,7 +1,6 @@
 form{
     margin: 50px;
     margin-top: 20px;
-    border: solid 1px black;
     height: 340px;
     width: auto;
     text-align: left;
@@ -29,4 +28,12 @@ iframe{
 }
 .btn{
     background-color: $color1;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    form{
+        border: none;
+    }
+    .mapa{
+        content-visibility: hidden;
+    }
 }

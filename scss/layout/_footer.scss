@@ -1,44 +1,95 @@
 footer{
     width: 100%;
     height: auto;
+}
+footer i{
+    font-size: 20px;
+    margin-left: 38px;
+}
+nav a{
+    font-family: 'Heebo', sans-serif;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 18px;
+}
 
-    nav a{
-        font-family: 'Heebo', sans-serif;
-        padding-right: 10px;
-        color: black;
-        text-decoration: none;
-        justify-content: space-between;
-        font-size: 18px;
+nav a:hover{
+    color: green;
+}
+
+.container__footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+    height: auto;
+    background-color: $color1;
+    color: black;
+    font-family: 'Heebo', sans-serif;
+}
+.logo1 img{
+    height: 160px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 25px !important;
+}
+
+p{
+    text-align: left;
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 500px){
+    .logo1 img{
+        content-visibility: hidden;
     }
-
-    nav a:hover{
-        color: green;
+    .navegacion{
+        content-visibility: hidden;
     }
-
-    .container__footer{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: auto;
+    .contacto{
+        content-visibility: hidden;
+    }
+    .redes_sociales{
         margin: auto;
-        height: auto;
-        background-color: $color1;
+    }
+}
+@media (min-width: 501px) and (max-width: 768px){
+    .navegacion{
+        content-visibility: hidden;
+    }
+    .contacto{
+        content-visibility: hidden;
+    }
+    .redes_sociales{
+        margin: auto;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .navegacion{
+        content-visibility: hidden;
+    }
+    .c1{
+        text-align: left;
         color: black;
-        font-family: 'Heebo', sans-serif;
-
-        .logo1 img{
-            height: 160px;
-            margin: 10px;
-            margin-bottom: 10px;
-        }
-
-        h2{
-            font-size: 25px !important;
-        }
-
-        p{
-            text-align: left;
-            color: black;
-        }
+    }
+    .redes_sociales{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+}
+@media (min-width: 1025px) and (max-width: 2560px){
+    .contacto{
+        text-align: center;
+    }
+    .c1{
+        color: black;
+        text-align: center;
     }
 }

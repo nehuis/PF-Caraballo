@@ -7,6 +7,11 @@
   font-size: 25px;
 }
 
+.desc {
+  text-align: center;
+  color: white;
+}
+
 .b1 {
   background-color: greenyellow;
   border-radius: 10px;
@@ -31,11 +36,15 @@ p {
   margin: 10px;
 }
 
-footer i {
-  font-size: 20px;
-  margin-left: 38px;
+/*reset inicia*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
 }
 
+/*reset fin*/
 /*layout inicia*/
 body {
   margin: 0;
@@ -53,7 +62,13 @@ footer {
   width: 100%;
   height: auto;
 }
-footer nav a {
+
+footer i {
+  font-size: 20px;
+  margin-left: 38px;
+}
+
+nav a {
   font-family: "Heebo", sans-serif;
   padding-right: 10px;
   color: black;
@@ -61,10 +76,12 @@ footer nav a {
   justify-content: space-between;
   font-size: 18px;
 }
-footer nav a:hover {
+
+nav a:hover {
   color: green;
 }
-footer .container__footer {
+
+.container__footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -75,19 +92,70 @@ footer .container__footer {
   color: black;
   font-family: "Heebo", sans-serif;
 }
-footer .container__footer .logo1 img {
+
+.logo1 img {
   height: 160px;
   margin: 10px;
   margin-bottom: 10px;
 }
-footer .container__footer h2 {
+
+h2 {
   font-size: 25px !important;
 }
-footer .container__footer p {
+
+p {
   text-align: left;
   color: black;
 }
 
+@media (min-width: 320px) and (max-width: 500px) {
+  .logo1 img {
+    content-visibility: hidden;
+  }
+  .navegacion {
+    content-visibility: hidden;
+  }
+  .contacto {
+    content-visibility: hidden;
+  }
+  .redes_sociales {
+    margin: auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .navegacion {
+    content-visibility: hidden;
+  }
+  .contacto {
+    content-visibility: hidden;
+  }
+  .redes_sociales {
+    margin: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navegacion {
+    content-visibility: hidden;
+  }
+  .c1 {
+    text-align: left;
+    color: black;
+  }
+  .redes_sociales {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+}
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .contacto {
+    text-align: center;
+  }
+  .c1 {
+    color: black;
+    text-align: center;
+  }
+}
 header .navbar {
   font-size: 20px;
   background-color: rgb(0, 255, 13) !important;
@@ -108,7 +176,6 @@ header .navbar .nav-link:hover {
 form {
   margin: 50px;
   margin-top: 20px;
-  border: solid 1px black;
   height: 340px;
   width: auto;
   text-align: left;
@@ -144,12 +211,19 @@ iframe {
   background-color: rgb(0, 255, 13);
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  form {
+    border: none;
+  }
+  .mapa {
+    content-visibility: hidden;
+  }
+}
 .vision {
   display: flex;
   align-items: center;
   gap: 10%;
   color: white;
-  font-size: 30px;
   text-align: center;
   margin: 30px;
 }
@@ -165,12 +239,12 @@ iframe {
 
 .text1 {
   max-width: 600px;
+  font-size: 25px;
 }
 
 .story {
   display: flex;
   color: white;
-  font-size: 30px;
   gap: 10%;
   margin: 30px;
   margin-top: 250px;
@@ -188,8 +262,47 @@ iframe {
 
 .text2 {
   max-width: 600px;
+  font-size: 25px;
 }
 
+@media (min-width: 320px) and (max-width: 650px) {
+  .vision {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .text1 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  .im1 {
+    content-visibility: hidden;
+  }
+  .story {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .text2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  .im2 {
+    content-visibility: hidden;
+  }
+}
+@media (min-width: 651px) and (max-width: 1100px) {
+  .story {
+    margin-top: 100px;
+  }
+  .text1 {
+    font-size: 20px;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+}
 section {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
@@ -207,6 +320,42 @@ section {
   background-color: rgb(0, 255, 13);
   font-family: fantasy;
   font-size: large;
+}
+
+.p1 {
+  color: black;
+}
+
+.p2 {
+  color: black;
+}
+
+.p3 {
+  color: black;
+}
+
+.p4 {
+  color: black;
+}
+
+.p5 {
+  color: black;
+}
+
+.p6 {
+  color: black;
+}
+
+.p7 {
+  color: black;
+}
+
+.p8 {
+  color: black;
+}
+
+.p9 {
+  color: black;
 }
 
 .card-img {
@@ -256,6 +405,43 @@ section {
   background-image: url("/multimedia/shaker.jfif");
 }
 
+@media (min-width: 320px) and (max-width: 680px) {
+  section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .p1 {
+    text-align: center;
+  }
+  .p2 {
+    text-align: center;
+  }
+  .p3 {
+    text-align: center;
+  }
+  .p4 {
+    text-align: center;
+  }
+  .p5 {
+    text-align: center;
+  }
+  .p6 {
+    text-align: center;
+  }
+  .p7 {
+    text-align: center;
+  }
+  .p8 {
+    text-align: center;
+  }
+  .p9 {
+    text-align: center;
+  }
+}
+@media (min-width: 681px) and (max-width: 1024px) {
+  section {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
 .ti1 {
   color: rgb(0, 255, 13);
   font-size: 45px;
@@ -279,4 +465,14 @@ section {
   font-size: 20px;
 }
 
+@media (min-width: 320px) {
+  .ti2 {
+    margin-top: 40px;
+  }
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 /*pages fin*//*# sourceMappingURL=style.css.map */
