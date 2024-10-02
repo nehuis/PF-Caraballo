@@ -49,7 +49,12 @@ section{
     background-position: center;
 }
 .boton{
+    background-color: $color1;
+    border: black;
+}
+.boton:hover{
     background-color: greenyellow;
+    transition: ease-out 0.2s;
 }
 .card-img1{
     background-image: url("/multimedia/prote.png");
